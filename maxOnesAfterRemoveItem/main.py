@@ -1,15 +1,3 @@
-# def maxOnesAfterRemoveItem(input):
-#   f, maxLen = 1, 0 
-#   for i in range(len(input)):
-#     c = 0
-#     new_list = input.copy()
-#     del new_list[i]
-#     for j in new_list:
-#       c = c + 1 if int(j) == f else 0
-#       maxLen=max(c, maxLen)
-#   print(maxLen)
-#   return(maxLen)
-
 import unittest
 
 def maxOnesAfterRemoveItem(input):

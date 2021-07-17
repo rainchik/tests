@@ -28,7 +28,7 @@ def maxOnesAfterRemoveItem(input):
       state = "one"
   maxLen = max(maxLen, c + c2)
   if allOnes:
-    return maxLen - 1
+    maxLen = maxLen - 1
   return maxLen
       
 # tests

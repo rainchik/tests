@@ -26,6 +26,7 @@ def maxOnesAfterRemoveItem(input):
       c2 = c
       c = 1
       state = "one"
+      maxLen = max(maxLen, c + c2)
   maxLen = max(maxLen, c + c2)
   if allOnes:
     maxLen -= 1
@@ -49,7 +50,8 @@ class TestMaxOnes(unittest.TestCase):
     self.assertEqual(maxOnesAfterRemoveItem([1, 1, 0, 1, 1, 0, 1, 1, 1, 0]), 5)
   def test8(self):
     self.assertEqual(maxOnesAfterRemoveItem([1, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1]), 5)
-  
+  def test9(self):
+    self.assertEqual(maxOnesAfterRemoveItem([1, 1, 0, 1, 0, 1]), 3)
 
 if __name__ == "__main__":
   unittest.main()
